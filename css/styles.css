@@ -480,6 +480,8 @@ button {
 
 .portfolio-images {
   background: lightgray -25.026px 0px / 125% 100% no-repeat;
+  width: 288px;
+  height: 280px;
 }
 .container-overlay {
   position: relative;
@@ -524,6 +526,10 @@ button {
   .container-portfolio{
     width: 356px;
   }
+  .portfolio-images{
+    width: 356px;
+    height: 300px;
+  }
 }
 @media screen and (min-width: 1158px) {
   .portfolio-list {
@@ -537,6 +543,10 @@ button {
   }
   .container-portfolio{
     width: 360px;
+  }
+  .portfolio-images{
+    width: 360px;
+    height: 300px;
   }
 }
 /* FOOTER */

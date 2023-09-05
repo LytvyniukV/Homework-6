@@ -944,9 +944,9 @@ width: 100%;
   background: #FFF;
   padding: 72px 16px 40px 16px;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  top: 0;
+  left: 0;
+  
 }
 .close-button-menu{
   position: absolute;

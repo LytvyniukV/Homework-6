@@ -703,17 +703,13 @@ button {
   }
 }
 /* MODAL WINDOW */
-.is-open {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-}
+
 .backdrop {
   height: 100%;
   width: 100%;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -933,9 +929,9 @@ button {
   margin-right: auto;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
   background: #fff;
   padding: 72px 16px 40px 16px;
   position: fixed;
@@ -1009,3 +1005,10 @@ button {
     display: none;
   }
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+

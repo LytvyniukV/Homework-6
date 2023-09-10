@@ -51,7 +51,7 @@
           </ul>
         </address>
       </div>
-      <button type="button" class="menu-mobile">
+      <button type="button" class="menu-mobile" data-second-modal-open>
         <svg class="menu-icon" width="24" height="24">
           <use href="./images/icons.svg#icon-menu"></use>
         </svg>
@@ -63,7 +63,7 @@
       <section class="section hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-first-modal-open>Order Service</button>
         </div>
       </section>
       <!-- BENEFITS SECTION -->
@@ -541,9 +541,11 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+<!-- MODAL WINDOW -->
+
+    <div class="backdrop is-hidden" data-first-modal>
       <div class="modal-container">
-        <button class="close-button-modal" type="button">
+        <button class="close-button-modal" type="button" data-first-modal-close>
           <svg class="close-icon-modal" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
@@ -639,8 +641,8 @@
     </div>
 
     <!-- MOBILE MENU -->
-    <div class="mobile-menu">
-      <button type="button" class="close-button-menu">
+    <div class="mobile-menu is-hidden" data-second-modal>
+      <button type="button" class="close-button-menu" data-second-modal-close>
         <svg class="close-icon-modal" width="8" height="8">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
@@ -649,8 +651,8 @@
         <li>
           <a class="menu-links current-mobile" href="./index.html">Studio</a>
         </li>
-        <li><a class="menu-links" href="">Portfolio</a></li>
-        <li><a class="menu-links" href="">Contacts</a></li>
+        <li><a class="menu-links" href="#portfolio">Portfolio</a></li>
+        <li><a class="menu-links" href="#contacts">Contacts</a></li>
       </ul>
       <ul class="contacts-menu-list">
         <li>
@@ -695,5 +697,6 @@
         </li>
       </ul>
     </div>
+    <script src="./js/script.js"></script>
   </body>
 </html>

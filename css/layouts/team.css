@@ -1,0 +1,101 @@
+.team-section {
+    background-color: var(--cloud);
+  }
+  .section-title {
+    color: var(--navyblue);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    margin-bottom: 72px;
+  }
+  .card-container {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+  .team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+  }
+  .team-item {
+    background: var(--white);
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
+  .team-images {
+    background: lightgray -97.034px -0.927px / 181.897% 251.37% no-repeat;
+  }
+  .team-title {
+    text-align: center;
+  }
+  .team-text {
+    text-align: center;
+  }
+  .social-links-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+  }
+  .social-links-item {
+    width: 40px;
+    height: 40px;
+  }
+  .social-icon-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--iris);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .social-icon-container:hover,
+  .social-icon-container:focus {
+    background-color: #404bbf;
+  }
+  .social-icon {
+    fill: #f4f4fd;
+  }
+
+    /* ========================TABLET========================= */
+
+  @media screen and (min-width: 768px) {
+    .team-list {
+      flex-flow: row wrap;
+      column-gap: 24px;
+      row-gap: 64px;
+    }
+    .team-container {
+      padding-left: 92px;
+      padding-right: 92px;
+    }
+    .team-item {
+      flex-basis: calc((100% - 24px) / 2);
+    }
+  }
+
+    /* =========================DESKTOP====================== */
+
+  @media screen and (min-width: 1158px) {
+    .team-list {
+      flex-wrap: nowrap;
+      gap: 24px;
+    }
+    .team-item {
+      flex-basis: calc((100% - 72px) / 4);
+    }
+    .team-container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }

@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,6 +20,7 @@
     />
   </head>
   <body>
+    <!-- ===================HEADER=================== -->
     <header class="header-section">
       <div class="container header">
         <nav class="header-nav">
@@ -63,7 +64,9 @@
       <section class="section hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button" data-first-modal-open>Order Service</button>
+          <button class="hero-button" type="button" data-first-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- BENEFITS SECTION -->
@@ -130,10 +133,7 @@
             <li class="team-item">
               <img
                 class="team-images"
-                srcset="
-                  ./images/team/markgierrero.jpg 1x,
-                  ./images/team/mark@2x.jpg      2x
-                "
+                srcset="./images/team/mark@2x.jpg 2x"
                 src="./images/team/markgierrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -177,10 +177,7 @@
             <li class="team-item">
               <img
                 class="team-images"
-                srcset="
-                  ./images/team/tomford.jpg 1x,
-                  ./images/team/tom@2x.jpg  2x
-                "
+                srcset="./images/team/tom@2x.jpg 2x"
                 src="./images/team/tomford.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -224,10 +221,7 @@
             <li class="team-item">
               <img
                 class="team-images"
-                srcset="
-                  ./images/team/camillagarcia.jpg 1x,
-                  ./images/team/camila@2x.jpg     2x
-                "
+                srcset="./images/team/camila@2x.jpg 2x"
                 src="./images/team/camillagarcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -271,10 +265,7 @@
             <li class="team-item">
               <img
                 class="team-images"
-                srcset="
-                  ./images/team/danielwilson.jpg 1x,
-                  ./images/team/daniel@2x.jpg    2x
-                "
+                srcset="./images/team/daniel@2x.jpg 2x"
                 src="./images/team/danielwilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -328,13 +319,18 @@
                 <img
                   class="portfolio-images"
                   srcset="
-                    ./images/portfolio/bank.jpg    1x,
-                    ./images/portfolio/bank@2x.jpg 2x
+                    ./images/portfolio/bank-mobile.jpg     288w,
+                    ./images/portfolio/bank-mobile@2x.jpg  576w,
+                    ./images/portfolio/bank-tablet.jpg     356w,
+                    ./images/portfolio/bank-tablet@2x.jpg  712w,
+                    ./images/portfolio/bank-desktop.jpg    360w,
+                    ./images/portfolio/bank-desktop@2x.jpg 720w
                   "
-                  src="./images/portfolio/bank.jpg"
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portfolio/bank-mobile.jpg"
                   alt="Banking App"
                   width="288"
-                  height="280"
+                  
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -352,13 +348,18 @@
                 <img
                   class="portfolio-images"
                   srcset="
-                    ./images/portfolio/mobile-qr.jpg    1x,
-                    ./images/portfolio/mobile-qr@2x.jpg 2x
+                    ./images/portfolio/mobile-qr_mobile.jpg     288w,
+                    ./images/portfolio/mobile-qr_mobile@2x.jpg  576w,
+                    ./images/portfolio/mobile-qr-tablet.jpg     356w,
+                    ./images/portfolio/mobile-qr-tablet@2x.jpg  712w,
+                    ./images/portfolio/mobile-qr-desktop.jpg    360w,
+                    ./images/portfolio/mobile-qr-desktop@2x.jpg 720w
                   "
-                  src="./images/portfolio/mobile-qr.jpg"
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portfolio/mobile_qr.jpg"
                   alt="Cashless Payment"
                   width="288"
-                  height="280"
+                  
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -374,15 +375,19 @@
             <li class="portfolio-item">
               <div class="container-overlay">
                 <img
-                  class="portfolio-images"
                   srcset="
-                    ./images/portfolio/laptop.jpg    1x,
-                    ./images/portfolio/laptop@2x.jpg 2x
+                    ./images/portfolio/laptop-mobile.jpg     288w,
+                    ./images/portfolio/laptop-mobile@2x.jpg  576w,
+                    ./images/portfolio/laptop-tablet.jpg     356w,
+                    ./images/portfolio/laptop-tablet@2x.jpg  712w,
+                    ./images/portfolio/laptop-desktop.jpg    360w,
+                    ./images/portfolio/laptop-desktop@2x.jpg 720w
                   "
-                  src="./images/portfolio/laptop.jpg"
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portfolio/laptop-mobile.jpg"
                   alt="Meditation App"
                   width="288"
-                  height="280"
+                  
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -400,13 +405,18 @@
                 <img
                   class="portfolio-images"
                   srcset="
-                    ./images/portfolio/car.jpg    1x,
-                    ./images/portfolio/car@2x.jpg 2x
+                    ./images/portfolio/car-mobile.jpg     288w,
+                    ./images/portfolio/car-mobile@2x.jpg  576w,
+                    ./images/portfolio/car-tablet.jpg     356w,
+                    ./images/portfolio/car-tablet@2x.jpg  712w,
+                    ./images/portfolio/car-desktop.jpg    360w,
+                    ./images/portfolio/car-desktop@2x.jpg 720w
                   "
-                  src="./images/portfolio/car.jpg"
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portfolio/car-mobile.jpg"
                   alt="Taxi Service"
                   width="288"
-                  height="280"
+                  
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -424,13 +434,18 @@
                 <img
                   class="portfolio-images"
                   srcset="
-                    ./images/portfolio/mobile.jpg    1x,
-                    ./images/portfolio/mobile@2x.jpg 2x
+                    ./images/portfolio/mobile_mobile.jpg     288w,
+                    ./images/portfolio/mobile_mobile@2x.jpg  576w,
+                    ./images/portfolio/mobile-tablet.jpg     356w,
+                    ./images/portfolio/mobile-tablet@2x.jpg  712w,
+                    ./images/portfolio/mobile-desktop.jpg    360w,
+                    ./images/portfolio/mobile-desktop@2x.jpg 720w
                   "
-                  src="./images/portfolio/mobile.jpg"
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
+                  src="./images/portfolio/mobile_mobile.jpg"
                   alt="Screen Illustrations"
                   width="288"
-                  height="280"
+                  
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -450,13 +465,18 @@
                 <img
                   class="portfolio-images"
                   srcset="
-                    ./images/portfolio/woman.jpg    1x,
-                    ./images/portfolio/woman@2x.jpg 2x
+                    ./images/portfolio/woman-mobile.jpg     288w,
+                    ./images/portfolio/woman-mobile@2x.jpg  576w,
+                    ./images/portfolio/woman-tablet.jpg     356w,
+                    ./images/portfolio/woman-tablet@2x.jpg  712w,
+                    ./images/portfolio/woman-desktop.jpg    360w,
+                    ./images/portfolio/woman-desktop@2x.jpg 720w
                   "
+                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/portfolio/woman.jpg"
                   alt="Online Courses"
                   width="288"
-                  height="280"
+                  
                 />
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -541,7 +561,7 @@
         </div>
       </div>
     </footer>
-<!-- MODAL WINDOW -->
+    <!-- MODAL WINDOW -->
 
     <div class="backdrop is-hidden" data-first-modal>
       <div class="modal-container">
@@ -628,11 +648,10 @@
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the &nbsp;<a
-                class="checkbox-link"
-                href=""
-                >Privacy Policy</a
-              >
+              <span class="modal-checkbox-text">
+                I accept the terms and conditions of the
+                <a class="checkbox-link" href="">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="modal-submit-button">Send</button>

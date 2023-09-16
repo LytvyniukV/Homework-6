@@ -1,0 +1,38 @@
+/* COMMON */
+@import './base/common.css';
+@import './base/container.css';
+@import './base/section.css';
+@import './base/visually-hidden.css';
+
+/* VARIABLES */
+@import './base/variables.css';
+
+/* HEADER */
+@import './layouts/header.css';
+
+/* HERO */
+@import './layouts/hero.css';
+
+/* BENEFITS */
+@import './layouts/benefits.css';
+
+/* TITLES and TEXT for SECTIONS */
+@import './layouts/title-and-text-sections.css';
+
+/* TEAM */
+@import './layouts/team.css';
+
+/* PORTFOLIO */
+@import './layouts/portfolio.css';
+
+/* FOOTER */
+@import './layouts/footer.css';
+
+/* MODAL */
+@import './utils/modal.css';
+
+/* MOBILE MENU */
+@import './utils/mobile-menu.css';
+
+/* IS-HIDDEN  */
+@import './base/is-hidden.css';
